@@ -1,0 +1,22 @@
+.about {
+  background-color: #121212;
+}
+
+.title {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2rem;
+}
+.container .row {
+  height: 80%;
+}
+
+.container .row .col-lg-0 p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+}
