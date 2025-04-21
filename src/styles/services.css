@@ -9,9 +9,11 @@
   }
 }
 .card-body .btn {
-  color: #000;
+  color: #ffc107;
+  background-color: #222222;
   &:hover {
-    color: #ffc107;
+    color: #000;
+    background-color: #ffc107;
   }
 }
 .card img {
