@@ -17,6 +17,7 @@
   color: #222222;
   &:hover {
     color: #000000;
+    transform: scale(1.1);
     transition: all 0.5s ease;
   }
 }
@@ -29,9 +30,10 @@
   cursor: pointer;
   z-index: 2;
 
+  transition: transform 0.3s ease;
+
   &&:hover {
     transform: scale(1.1);
-    transition: all 0.3s ease;
   }
 }
 

@@ -77,7 +77,6 @@
           </div>
 
           <button
-            <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -126,8 +125,8 @@
         <img src="./src/assets/banners/banner 3.webp" alt="banner of home" />
       </section>
 
-      <article id="home" class="description container">
-        <div class="row vh-100 align-items-center justify-content-center">
+      <article class="description container py-5">
+        <div class="row vh-100 align-items-center">
           <div class="col align-items-center">
             <h1 class="title">Sammy’s General Welding Workshop</h1>
             <p class="fs-4">
@@ -249,7 +248,7 @@
 
     <!-- Gallery -->
     <section id="gallery" class="gallery py-5 bg-black">
-      <div class="col">
+      <div class="container">
         <h2 class="title text-center mb-5">
           <span class="text-warning">OUR </span>WORK
         </h2>
@@ -259,20 +258,23 @@
               src="./src/assets/gallery/work1.webp"
               class="img-fluid rounded shadow"
               alt="Welding work 1"
+              loading="lazy"
             />
           </div>
-          <div class="g-row-6 col-12 col-sm-6 col-md-4">
+          <div class="col-12 col-sm-6 col-md-4">
             <img
               src="./src/assets/gallery/work2.webp"
               class="img-fluid rounded shadow"
               alt="Welding work 2"
+              loading="lazy"
             />
           </div>
-          <div class="row-6 col-12 col-sm-6 col-md-4">
+          <div class="col-12 col-sm-6 col-md-4">
             <img
               src="./src/assets/gallery/work3.webp"
               class="img-fluid rounded shadow"
               alt="Welding work 3"
+              loading="lazy"
             />
           </div>
           <div class="col-12 col-sm-6 col-md-4">
@@ -280,6 +282,7 @@
               src="./src/assets/gallery/work4.webp"
               class="img-fluid rounded shadow"
               alt="Block construction 1"
+              loading="lazy"
             />
           </div>
           <div class="col-12 col-sm-6 col-md-4">
@@ -287,6 +290,7 @@
               src="./src/assets/gallery/work5.webp"
               class="img-fluid rounded shadow"
               alt="Block construction 2"
+              loading="lazy"
             />
           </div>
           <div class="col-12 col-sm-6 col-md-4">
@@ -294,6 +298,7 @@
               src="./src/assets/gallery/work6.webp"
               class="img-fluid rounded shadow"
               alt="Block construction 3"
+              loading="lazy"
             />
           </div>
         </div>
@@ -375,5 +380,89 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Sammy's General Welding Workshop",
+        "image": "https://www.sammyswelding.com/src/assets/logo.png",
+        "description": "Servicios profesionales de soldadura y bloques de construcción en Guyana. Soldadura de calidad, fabricación de metal personalizada y bloques de construcción duraderos para todas sus necesidades.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Vergenoegen Seawall",
+          "addressLocality": "East Bank Essequibo",
+          "addressRegion": "Guyana"
+        },
+        "telephone": "+5926555387",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"],
+            "opens": "08:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sábado",
+            "opens": "09:00",
+            "closes": "14:00"
+          }
+        ],
+        "url": "https://www.sammyswelding.com/",
+        "sameAs": [
+          "https://www.facebook.com/sammyswelding",
+          "https://www.instagram.com/sammyswelding"
+        ],
+        "priceRange": "$$",
+        "servesCuisine": "Servicios de Construcción",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios de Soldadura",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
+              "name": "Servicios Generales de Soldadura",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Soldadura Estructural"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Puertas y Vallas Personalizadas"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Soldadura de Tuberías"
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Materiales de Construcción",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Product",
+                    "name": "Bloques de Construcción"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    </script>
   </body>
 </html>
