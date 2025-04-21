@@ -1,7 +1,7 @@
 .card {
   color: #000;
   background-color: #ffc107;
-
+  border: 1px solid #ffc107;
   &:hover {
     background-color: #2222;
     color: #fff;
